@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { db } from "@/lib/firebase";
+import { db } from "../../../lib/firebase";  // ✅ CORRECT - Uses relative path
 import { collection, query, onSnapshot } from "firebase/firestore";
 
 export default function Resources() {

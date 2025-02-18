@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { auth } from "@/lib/firebase";
+import { db } from "../../../lib/firebase";  // ✅ CORRECT - Uses relative path
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/navigation";
 
